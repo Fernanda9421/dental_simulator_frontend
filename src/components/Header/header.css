@@ -1,0 +1,28 @@
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 880px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  display: flex;
+  width: 200px;
+  justify-content: space-around;
+}
+
+.link {
+  text-decoration: none;
+  transition: all 0.2s;
+  color: rgb(121, 48, 121);
+  font-weight: bold;
+}
+
+.link:hover {
+  color: rgb(85, 36, 85);
+}
+
+.selected {
+  color: rgb(155, 75, 155);
+}
