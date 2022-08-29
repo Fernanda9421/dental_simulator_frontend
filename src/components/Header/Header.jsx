@@ -13,14 +13,12 @@ function Header() {
       <nav className='nav-link'>
         <NavLink
           to='/'
-          activeClassName='selected'
           className='link'
         >
           Clientes
         </NavLink>
         <NavLink
           to='/calculator'
-          activeClassName='selected'
           className='link'
         >
           Calculadora
