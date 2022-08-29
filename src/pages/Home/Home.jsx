@@ -1,11 +1,12 @@
 import React from "react";
+import ClientCards from "../../components/ClientCards/ClientCards";
 import Header from "../../components/Header/Header";
 
 function Home() {
   return (
     <div>
       <Header />
-      <h1>Dental Simulator</h1>
+      <ClientCards />
     </div>
   );
 }
