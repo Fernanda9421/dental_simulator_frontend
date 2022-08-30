@@ -5,10 +5,15 @@
   margin: 0;
   color: #ffffff;
   padding: 35px;
+  border-bottom: 1px solid rgb(147,61,237);
+  width: 300px;
 }
 
 .payment-cards-container {
   background: linear-gradient(108deg, rgb(34,95,110) 45%, rgb(147,61,237) 90%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .payment-cards-div {
