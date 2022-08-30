@@ -43,6 +43,8 @@
 .client-name {
   font-size: 1.2em;
   font-weight: 300;
+  border-bottom: 1px solid rgba(20, 20, 20, 0.144);
+  width: 150px;
 }
 
 .treatment-name,
