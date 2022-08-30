@@ -1,6 +1,5 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import Logo from '../../images/logo.png';
 
 import './header.css';
 
@@ -8,7 +7,7 @@ function Header() {
   return (
     <header className='header-container'>
       <div className='header-logo'>
-        <img className='logo' src={ Logo } alt='Logo da empresa' />
+        <h1 className='header-text'>Dental Simulator</h1>
       </div>
       <nav className='nav-link'>
         <NavLink

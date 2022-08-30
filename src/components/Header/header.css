@@ -23,3 +23,9 @@
 .link:hover {
   color: rgb(85, 36, 85);
 }
+
+.header-text {
+  font-weight: 500;
+  font-family: 'Dancing Script', cursive;
+  color: #225f6e;;
+}
