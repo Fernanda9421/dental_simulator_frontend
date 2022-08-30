@@ -1,0 +1,26 @@
+.date-selected-container {
+  display: flex;
+  flex-direction: column;
+  width: 500px;
+}
+
+.date-selected-box {
+  display: flex;
+  justify-content: space-between;
+}
+
+span {
+  color: #ffffff;
+}
+
+.react-datepicker-wrapper {
+  margin-top: 10px;
+}
+
+input {
+  padding: 6px;
+  border-radius: 6px;
+  border: none;
+  font: inherit;
+  max-width: 200px;
+}
