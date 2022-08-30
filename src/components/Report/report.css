@@ -1,0 +1,23 @@
+.report-container {
+  background: linear-gradient(108deg, rgb(34,95,110) 45%, rgb(147,61,237) 90%);
+  height: 88.2vh;
+  /* width: 100vw; */
+}
+
+.title {
+  text-align: center;
+  font-size: 1.5em;
+  font-weight: 300;
+  margin: 0 auto;
+  color: #ffffff;
+  padding: 35px;
+  border-bottom: 1px solid rgb(147,61,237);
+  width: 300px;
+}
+
+.report-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 40px auto;
+}
