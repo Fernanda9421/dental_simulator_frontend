@@ -3,10 +3,16 @@ import DentalSimulatorContext from "./DentalSimulatorContext";
 
 function DentalSimulatorProvider({ children }) {
   const [payments, setPayments] = useState([]);
+  const [startDate, setStartDate] = useState(new Date());
+  const [endDate, setEndDate] = useState(new Date());
 
   const context = {
     payments,
     setPayments,
+    startDate,
+    setStartDate,
+    endDate,
+    setEndDate,
   };
 
   return (
