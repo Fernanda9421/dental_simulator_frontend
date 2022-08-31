@@ -1,0 +1,29 @@
+.table-container {
+  margin-top: 2%;
+  line-height: 1.8;
+}
+
+#table {
+  width: 100%;
+  display: table;
+  font-size: 1em;
+  margin: 4% auto;
+}
+
+thead {
+  background: aliceblue;
+  color: #225f6e;
+}
+
+tbody {
+  background: ghostwhite;
+  color: rgb(80, 78, 78);
+}
+
+td {
+  text-align: center;
+}
+
+tr {
+  text-align: center;
+}
