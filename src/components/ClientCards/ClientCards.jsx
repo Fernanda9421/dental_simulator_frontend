@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from "react";
 import DentalSimulatorContext from "../../context/DentalSimulatorContext";
-import { convertDueDate } from "../../utils/convertDueDate";
+import { convertDueDate } from "../../utils/utils";
 import { requestData } from "../../services/requests";
 import Loading from "../Loading/Loading";
 
@@ -33,7 +33,7 @@ function ClientCards() {
           ? <Loading />
           : (
             <div className='payment-cards-container'>
-              <h1 className='title'>Lista de clientes</h1>
+              <h1 className='title-clients'>Lista de clientes</h1>
               <div className='payment-cards-div'>
                 {
                   payments.map(({ id, attendances, installmentValue, dueDate }) => (
