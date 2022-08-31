@@ -10,7 +10,7 @@
 }
 
 span {
-  color: #ffffff;
+  color: #225f6e;
 }
 
 .react-datepicker-wrapper {
@@ -20,7 +20,7 @@ span {
 input {
   padding: 6px;
   border-radius: 6px;
-  border: none;
+  border: 1px solid rgb(147,61,237);
   font: inherit;
   max-width: 200px;
 }

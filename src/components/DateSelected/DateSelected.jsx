@@ -1,12 +1,14 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
+import DentalSimulatorContext from "../../context/DentalSimulatorContext";
 import './dateSelected.css';
 
 function DateSelected() {
-  const [startDate, setStartDate] = useState(new Date());
-  const [endDate, setEndDate] = useState(new Date());
+  const {
+    startDate, setStartDate, endDate, setEndDate,
+  } = useContext(DentalSimulatorContext);
 
   return (
     <div className='date-selected-container'>
@@ -22,7 +24,7 @@ function DateSelected() {
             endDate={ endDate }
           />
         </div>
-        <div className='final-date'>
+        <div className='final-date-box'>
           <span>Data final:</span>
           <DatePicker
             dateFormat="dd/MM/yyyy"
