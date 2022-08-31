@@ -14,13 +14,13 @@ function Header() {
           to='/'
           className='link'
         >
-          Clientes
+          Relatórios
         </NavLink>
         <NavLink
-          to='/calculator'
+          to='/clients'
           className='link'
         >
-          Calculadora
+          Clientes
         </NavLink>
       </nav>
     </header>
