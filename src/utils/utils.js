@@ -1,0 +1,12 @@
+export const convertDueDate = (date) => (
+  date.split('-').reverse().join('/')
+);
+
+export const numberOfResults = (results) => (
+  results.length
+);
+
+export const totalValue = (results) => {
+  const values = results.map((result) => Number(result.installmentValue));
+  return values.reduce((acc, crr) => acc + crr, 0).toFixed(2);
+};
