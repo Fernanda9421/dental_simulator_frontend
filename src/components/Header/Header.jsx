@@ -17,10 +17,10 @@ function Header() {
           Relatórios
         </NavLink>
         <NavLink
-          to='/clients'
+          to='/appointments'
           className='link'
         >
-          Clientes
+          Consultas
         </NavLink>
       </nav>
     </header>
