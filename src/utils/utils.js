@@ -1,4 +1,4 @@
-export const convertDueDate = (date) => (
+export const convertDate = (date) => (
   date.split('-').reverse().join('/')
 );
 
