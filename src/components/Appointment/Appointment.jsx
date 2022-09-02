@@ -32,6 +32,7 @@ function Appointment() {
           <Loading />
         ) : (
           <div className="appointment-container">
+            <h1 className="title">Consultas Cadastradas</h1>
             <div>
               <TableAppointment />
             </div>
