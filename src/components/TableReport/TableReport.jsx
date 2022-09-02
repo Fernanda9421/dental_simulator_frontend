@@ -1,6 +1,6 @@
 import React, { useContext } from 'react';
 import DentalSimulatorContext from '../../context/DentalSimulatorContext';
-import { convertDueDate } from '../../utils/utils';
+import { convertDate } from '../../utils/utils';
 
 import './tableReport.css';
 
@@ -23,7 +23,7 @@ function TableReport() {
               <tr key={ id }>
                 <td>{ attendances.clients.fullName }</td>
                 <td>R$ { installmentValue }</td>
-                <td>{ convertDueDate(dueDate) }</td>
+                <td>{ convertDate(dueDate) }</td>
               </tr>
             ))
           }
