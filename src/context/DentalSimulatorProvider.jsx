@@ -6,6 +6,17 @@ function DentalSimulatorProvider({ children }) {
   const [startDate, setStartDate] = useState(new Date());
   const [endDate, setEndDate] = useState(new Date());
   const [appointments, setAppointments] = useState([]);
+  const [newAppointment, setNewAppointment] = useState({
+    attendanceDate: new Date(),
+    clientName: '',
+    treatment: '',
+    installments: 1,
+    dueDate: new Date(),
+  });
+  const [treatments, setTreatments] = useState([]);
+  const [installments, setInstallments] = useState(
+    [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+  );
 
   const context = {
     payments,
@@ -16,6 +27,12 @@ function DentalSimulatorProvider({ children }) {
     setEndDate,
     appointments,
     setAppointments,
+    newAppointment,
+    setNewAppointment,
+    treatments,
+    setTreatments,
+    installments,
+    setInstallments,
   };
 
   return (
