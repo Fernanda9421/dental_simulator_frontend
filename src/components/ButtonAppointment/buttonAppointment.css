@@ -1,0 +1,6 @@
+.button-appointment-box {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 3%;
+  margin-right: 6%;
+}
