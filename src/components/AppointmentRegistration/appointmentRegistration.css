@@ -1,0 +1,107 @@
+/* .appointment-container {
+  display: flex;
+  flex-direction: column;
+  max-width: 600px;
+  margin: 3% auto;
+  align-items: center;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.select-treatment {
+  max-width: 215px;
+}
+
+.css-1pahdxg-control {
+  border-color: transparent !important;
+}
+
+.span-appointments {
+  color: rgb(49, 48, 48);
+}
+
+.input-appointments {
+  border-color: hsl(0, 0%, 80%) !important;
+  margin-top: 10px;
+  width: 214px !important;
+  height: 38px;
+  padding: 0;
+}
+
+.input-appointments:focus {
+  border-color: #2684FF !important;
+}
+
+.react-datepicker-wrapper {
+  display: flex;
+  margin-top: 0;
+} */
+
+.form-container {
+  max-width: 50%;
+  margin: 3% auto;
+  background: rgb(243, 240, 236);
+  border-radius: 10px;
+  padding: 4%;
+}
+
+.inputs-container {
+  margin: 6%;
+}
+
+.input-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-appointments {
+  max-width: 100%;
+  border-color: hsl(0, 0%, 80%);
+  font-size: smaller;
+  padding: 2%;
+}
+
+label {
+  margin: 2% 0;
+  color: #225f6e;
+}
+
+.react-datepicker-wrapper {
+  display: flex;
+  margin-top: 0;
+  color: rgb(109, 104, 104);
+}
+
+.css-1pahdxg-control {
+  border-color: transparent !important;
+}
+
+.date-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.input-date {
+  padding: 6%;
+  border-color: hsl(0, 0%, 80%);
+  font-size: smaller;
+  border-radius: 10px;
+  color: rgb(109, 104, 104);
+}
+
+.input-box {
+  margin: 2% 0;
+}
+
+.button-register {
+  display: flex;
+  justify-content: center;
+  margin-top: 13%;
+}
+
+.register {
+  width: 200px;
+}
