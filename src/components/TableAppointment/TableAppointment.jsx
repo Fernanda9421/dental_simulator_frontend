@@ -1,13 +1,13 @@
-import React, { useContext } from "react";
-import DentalSimulatorContext from "../../context/DentalSimulatorContext";
-import { convertDate } from "../../utils/utils";
+import React, { useContext } from 'react';
+import DentalSimulatorContext from '../../context/DentalSimulatorContext';
+import { convertDate } from '../../utils/utils';
 
 function TableAppointment() {
   const { appointments } = useContext(DentalSimulatorContext);
 
   return (
-    <div className="table-container">
-      <table id="table">
+    <div className='table-container'>
+      <table id='table'>
         <thead>
           <tr>
             <th>Cliente</th>
