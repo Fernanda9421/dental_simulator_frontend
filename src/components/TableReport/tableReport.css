@@ -27,3 +27,9 @@ td {
 tr {
   text-align: center;
 }
+
+@media screen and (max-width: 320px) {
+  #table {
+    font-size: 0.8em;
+  }
+}

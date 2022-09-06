@@ -46,3 +46,25 @@
 .result {
   background: rgb(243, 240, 236);
 }
+
+@media screen and (max-width: 320px) {
+  .title {
+    font-size: 1em;
+    width: 200px;
+  }
+
+  .report-box {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .total-box {
+    font-size: 0.8em;
+    width: 280px;
+    justify-content: center;
+  }
+
+  .total-box-result {
+    display: none;
+  }
+}

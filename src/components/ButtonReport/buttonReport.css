@@ -7,3 +7,10 @@
   color: #fff;
   cursor: pointer;
 }
+
+@media screen and (max-width: 320px) {
+  .button-report {
+    margin-top: 1em;
+    font-size: 0.8em;
+  }
+}

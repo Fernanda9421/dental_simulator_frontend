@@ -42,7 +42,7 @@ function Report() {
               <ButtonReport />
             </div>
             <div className='result'>
-              <div className='total-box'>
+              <div className='total-box total-box-result'>
                 <span className='span-result'>Resultados:</span>
                 <span className='result-value'>{numberOfResults(payments)}</span>
               </div>

@@ -32,5 +32,26 @@
 .header-text {
   font-weight: 500;
   font-family: 'Dancing Script', cursive;
-  color: #225f6e;;
+  color: #225f6e;
+}
+
+@media screen and (max-width: 320px) {
+  .header-logo {
+    margin-left: 1em;
+  }
+
+  .header-text {
+    font-weight: 100;
+    font-size: 1em;
+  }
+
+  .link {
+    font-size: 0.8em;
+    margin-right: 0.5em;
+  }
+
+  .nav-link {
+    width: auto;
+    margin-right: 1em;
+  }
 }
