@@ -9,22 +9,21 @@ function Appointment() {
   const { setAppointments } = useContext(DentalSimulatorContext);
   const [isLoading, setIsLoading] = useState(true);
 
-  const getAppointments = async () => {
-    try {
-      const endpoint = "/appointment";
-      const allAppointments = await requestData(endpoint);
-
-      setAppointments(allAppointments);
-      setIsLoading(false);
-    } catch (error) {
-      console.log(error);
-    }
-  };
-
   useEffect(() => {
+    const getAppointments = async () => {
+      try {
+        const endpoint = '/appointment';
+        const allAppointments = await requestData(endpoint);
+  
+        setAppointments(allAppointments);
+        setIsLoading(false);
+      } catch (error) {
+        console.log(error);
+      }
+    };
+
     getAppointments();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [setAppointments]);
 
   return (
     <>
@@ -32,8 +31,8 @@ function Appointment() {
         isLoading ? (
           <Loading />
         ) : (
-          <div className="appointment-container">
-            <h1 className="title">Consultas Cadastradas</h1>
+          <div className='appointment-container'>
+            <h1 className='title'>Consultas Cadastradas</h1>
             <div>
               <ButtonAppointment />
             </div>

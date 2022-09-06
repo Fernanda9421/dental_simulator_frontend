@@ -9,21 +9,20 @@ function Treatment() {
     treatments, setTreatments, newAppointment, setNewAppointment,
   } = useContext(DentalSimulatorContext);
 
-  const getTreatments = async () => {
-    try {
-      const endpoint = "/treatment";
-      const allTreatments = await requestData(endpoint);
-
-      setTreatments(allTreatments);
-    } catch (error) {
-      console.log(error);
-    }
-  }
-
   useEffect(() => {
+    const getTreatments = async () => {
+      try {
+        const endpoint = '/treatment';
+        const allTreatments = await requestData(endpoint);
+  
+        setTreatments(allTreatments);
+      } catch (error) {
+        console.log(error);
+      }
+    }
+
     getTreatments();
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, []);
+  }, [setTreatments]);
 
   const options = () => {
     const newTreatments = [];
