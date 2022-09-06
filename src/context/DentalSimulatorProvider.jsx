@@ -1,5 +1,5 @@
-import React, { useState } from "react";
-import DentalSimulatorContext from "./DentalSimulatorContext";
+import React, { useState } from 'react';
+import DentalSimulatorContext from './DentalSimulatorContext';
 
 function DentalSimulatorProvider({ children }) {
   const [payments, setPayments] = useState([]);

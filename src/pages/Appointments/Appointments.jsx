@@ -1,6 +1,6 @@
-import React from "react";
-import Header from "../../components/Header/Header";
-import Appointment from "../../components/Appointment/Appointment";
+import React from 'react';
+import Header from '../../components/Header/Header';
+import Appointment from '../../components/Appointment/Appointment';
 
 function Appointments() {
   return (

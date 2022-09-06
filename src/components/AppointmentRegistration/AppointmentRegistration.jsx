@@ -2,18 +2,18 @@ import React from 'react';
 import AttendanceDate from './AttendanceDate';
 import InputName from './InputName';
 import Treatment from './Treatment';
-
-import './appointmentRegistration.css';
 import Installment from './Installment';
 import DueDate from './DueDate';
 import ButtonRegisterAppointment from './ButtonRegisterAppointment';
+
+import './appointmentRegistration.css';
 
 function AppointmentRegistration() {
   return (
     <form className='form-container'>
       <div>
         <div>
-          <h1 className="title">Cadastrar nova consulta</h1>
+          <h1 className='title'>Cadastrar nova consulta</h1>
         </div>
         <div className='inputs-container'>
           <div className='input-box'>

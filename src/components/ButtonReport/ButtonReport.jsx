@@ -23,7 +23,7 @@ function ButtonReport() {
   return (
     <button
       className='button-report'
-      type="button"
+      type='button'
       onClick={ () => getPayments() }
     >
       Gerar relatório

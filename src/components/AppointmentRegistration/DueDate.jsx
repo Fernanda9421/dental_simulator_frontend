@@ -11,7 +11,7 @@ function DueDate() {
       <label>Data de vencimento</label>
       <DatePicker
         className='input-date'
-        dateFormat="dd/MM/yyyy"
+        dateFormat='dd/MM/yyyy'
         selected={dueDate}
         onChange={ (date) => {
           setNewAppointment({ ...newAppointment, dueDate: date })

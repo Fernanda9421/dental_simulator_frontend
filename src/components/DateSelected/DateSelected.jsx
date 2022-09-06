@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
+import React, { useContext } from 'react';
+import DatePicker from 'react-datepicker';
+import 'react-datepicker/dist/react-datepicker.css';
+import DentalSimulatorContext from '../../context/DentalSimulatorContext';
 
-import DatePicker from "react-datepicker";
-import "react-datepicker/dist/react-datepicker.css";
-import DentalSimulatorContext from "../../context/DentalSimulatorContext";
 import './dateSelected.css';
 
 function DateSelected() {
@@ -16,7 +16,7 @@ function DateSelected() {
         <div className='initial-date-box'>
           <span>Data Inicial:</span>
           <DatePicker
-            dateFormat="dd/MM/yyyy"
+            dateFormat='dd/MM/yyyy'
             selected={ startDate }
             onChange={ (date) => setStartDate(date) }
             selectsStart
@@ -27,7 +27,7 @@ function DateSelected() {
         <div className='final-date-box'>
           <span>Data final:</span>
           <DatePicker
-            dateFormat="dd/MM/yyyy"
+            dateFormat='dd/MM/yyyy'
             selected={ endDate }
             onChange={ (date) => setEndDate(date) }
             selectsEnd

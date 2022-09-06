@@ -12,7 +12,7 @@ function InputName() {
     <div className='input-container'>
       <label>Nome do cliente</label>
       <input
-        type="text"
+        type='text'
         className='input-appointments'
         name='name'
         placeholder='Nome completo'

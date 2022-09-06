@@ -22,7 +22,7 @@ function TableAppointment() {
               <td>{clients.fullName}</td>
               <td>{convertDate(attendanceDate)}</td>
               <td>{treatments.name}</td>
-              <td>{treatments.totalPrice}</td>
+              <td>R$ {treatments.totalPrice}</td>
             </tr>
           ))}
         </tbody>

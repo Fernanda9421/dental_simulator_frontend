@@ -12,7 +12,7 @@ function ButtonAppointment() {
     <div className='button-appointment-box'>
       <button
         className='button-report'
-        type="button"
+        type='button'
         onClick={ () => navigateToNewAppointment() }
       >
         Cadastrar consulta

@@ -9,7 +9,7 @@ function AttendanceDate() {
     <div className='input-container'>
       <label>Data do atendimento</label>
       <DatePicker
-        dateFormat="dd/MM/yyyy"
+        dateFormat='dd/MM/yyyy'
         className='input-date'
         selected={newAppointment.attendanceDate}
         onChange={ (date) => {
