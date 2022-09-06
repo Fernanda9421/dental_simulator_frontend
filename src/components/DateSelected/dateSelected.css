@@ -26,6 +26,10 @@ input {
 }
 
 @media screen and (max-width: 320px) {
+  .date-selected-container {
+    width: auto;
+  }
+
   .date-selected-box {
     display: flex;
     flex-direction: column;
