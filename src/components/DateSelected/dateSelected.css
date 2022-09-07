@@ -10,22 +10,22 @@
 }
 
 span {
-  color: #225f6e;
+  color: #1A4A40;
 }
 
 .react-datepicker-wrapper {
-  margin-top: 10px;
+  margin-top: 6% !important;
 }
 
 input {
   padding: 6px;
   border-radius: 6px;
-  border: 1px solid rgb(147,61,237);
+  border: 1px solid #0D241F;
   font: inherit;
   max-width: 200px;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .date-selected-container {
     width: auto;
   }
@@ -39,5 +39,17 @@ input {
 
   .initial-date-box {
     margin-bottom: 1em;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .date-selected-container {
+    width: 90%;
+  }
+  
+  .date-selected-box {
+    align-items: center;
+    font-size: 0.8em;
+    justify-content: space-evenly;
   }
 }

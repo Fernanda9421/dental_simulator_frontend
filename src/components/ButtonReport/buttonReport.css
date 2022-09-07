@@ -3,14 +3,21 @@
   border-radius: 7px;
   border: 1px cyan;
   font: inherit;
-  background-color: #225f6e;
+  background-color: #1A4A40;
   color: #fff;
   cursor: pointer;
 }
 
-@media screen and (max-width: 320px) {
+@media screen and (max-width: 480px) {
   .button-report {
-    margin-top: 1em;
+    margin-top: 3%;
     font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .button-report {
+    margin-top: 5%;
+    font-size: 80%;
   }
 }

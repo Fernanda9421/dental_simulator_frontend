@@ -12,12 +12,12 @@
 
 thead {
   background: aliceblue;
-  color: #225f6e;
+  color: #0D241F;
 }
 
 tbody {
   background: ghostwhite;
-  color: rgb(80, 78, 78);
+  color: #363636;
 }
 
 td {
@@ -28,8 +28,8 @@ tr {
   text-align: center;
 }
 
-@media screen and (max-width: 320px) {
-  #table {
-    font-size: 0.8em;
+@media screen and (max-width: 768px) {
+  .table-container {
+    display: none;
   }
 }
