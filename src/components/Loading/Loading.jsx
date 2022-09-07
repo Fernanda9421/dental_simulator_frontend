@@ -8,7 +8,7 @@ function Loading() {
     top: '50%',
     marginTop: '-25px',
     left: '50%',
-    marginLeft: '-100px',
+    marginLeft: '-50px',
     borderColor: 'purple',
   };
 
@@ -16,7 +16,7 @@ function Loading() {
     <div className='sweet-loading'>
       <CircleLoader
         cssOverride={override}
-        size={150}
+        size={100}
         color={'#123abc'}
         speedMultiplier={1.5}
       />
