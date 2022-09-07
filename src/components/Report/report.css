@@ -13,7 +13,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 40px auto;
+  margin: 3% auto;
   max-width: 700px;
 }
 
@@ -61,6 +61,7 @@
   .report-box {
     display: flex;
     flex-direction: column;
+    margin: 9% auto;
   }
 
   .total-box {

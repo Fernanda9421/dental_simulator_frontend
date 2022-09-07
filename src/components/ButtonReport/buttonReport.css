@@ -8,16 +8,9 @@
   cursor: pointer;
 }
 
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 768px) {
   .button-report {
-    margin-top: 3%;
-    font-size: 0.8em;
-  }
-}
-
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .button-report {
-    margin-top: 5%;
+    margin: 3% 1%;
     font-size: 80%;
   }
 }
