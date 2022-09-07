@@ -34,7 +34,7 @@ function Treatment() {
   }
 
   return (
-    <div className='input-container'>
+    <div  className='input-container'>
       <label>Tratamento</label>
       <Select
         options={ options() }

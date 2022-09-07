@@ -7,7 +7,7 @@ function DueDate() {
   const { dueDate } = newAppointment;
 
   return (
-    <div className='input-container'>
+    <div className='input-container div-date'>
       <label>Data de vencimento</label>
       <DatePicker
         className='input-date'

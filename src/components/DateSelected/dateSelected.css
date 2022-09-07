@@ -14,11 +14,11 @@ span {
 }
 
 .react-datepicker-wrapper {
-  margin-top: 6% !important;
+  margin-top: 2% !important;
 }
 
 input {
-  padding: 6px;
+  padding: 10px;
   border-radius: 6px;
   border: 1px solid #0D241F;
   font: inherit;
@@ -40,6 +40,10 @@ input {
   .initial-date-box {
     margin-bottom: 1em;
   }
+
+  input {
+    padding: 3%;
+  }
 }
 
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -51,5 +55,9 @@ input {
     align-items: center;
     font-size: 0.8em;
     justify-content: space-evenly;
+  }
+
+  input {
+    padding: 2%;
   }
 }

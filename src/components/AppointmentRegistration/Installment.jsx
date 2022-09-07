@@ -16,7 +16,7 @@ function Installment() {
   }
 
   return (
-    <div>
+    <div  className='input-container'>
       <label>Número de parcelas</label>
       <Select
         options={ options() }

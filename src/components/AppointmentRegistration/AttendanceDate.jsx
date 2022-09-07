@@ -6,7 +6,7 @@ function AttendanceDate() {
   const { newAppointment, setNewAppointment } = useContext(DentalSimulatorContext);
 
   return (
-    <div className='input-container'>
+    <div className='input-container div-date'>
       <label>Data do atendimento</label>
       <DatePicker
         dateFormat='dd/MM/yyyy'
