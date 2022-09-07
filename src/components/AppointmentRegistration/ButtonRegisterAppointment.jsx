@@ -6,7 +6,7 @@ import { requestPost } from '../../services/requests';
 import { numberOfInstallments } from '../../utils/utils';
 
 function ButtonRegisterAppointment() {
-  const { newAppointment, setNewAppointment } = useContext(DentalSimulatorContext);
+  const { newAppointment, setNewAppointment, buttonEnableForRegisterNewAppointment } = useContext(DentalSimulatorContext);
   const navigate = useNavigate();
 
   const navigateToHome = () => navigate('/');
@@ -39,6 +39,7 @@ function ButtonRegisterAppointment() {
       <button
         className='button-report register'
         type='button'
+        disabled={ !(buttonEnableForRegisterNewAppointment()) }
         onClick={ () => createAppointment() }
       >
         Cadastrar

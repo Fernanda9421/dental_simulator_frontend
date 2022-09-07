@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { isValidName, isValidTreatment } from '../utils/inputValidations';
 import DentalSimulatorContext from './DentalSimulatorContext';
 
 function DentalSimulatorProvider({ children }) {
@@ -18,6 +19,12 @@ function DentalSimulatorProvider({ children }) {
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   );
 
+  const buttonEnableForRegisterNewAppointment = () => {
+    const { clientName, treatment } = newAppointment;
+
+    return isValidName(clientName) && isValidTreatment(treatment);
+  };
+
   const context = {
     payments,
     setPayments,
@@ -33,6 +40,7 @@ function DentalSimulatorProvider({ children }) {
     setTreatments,
     installments,
     setInstallments,
+    buttonEnableForRegisterNewAppointment,
   };
 
   return (
