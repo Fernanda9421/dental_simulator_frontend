@@ -6,6 +6,7 @@ import Loading from '../Loading/Loading';
 import { numberOfResults, totalValue } from '../../utils/utils';
 import { requestData } from '../../services/requests';
 import DentalSimulatorContext from '../../context/DentalSimulatorContext';
+import TableReportMobile from '../TableReport/TableReportMobile';
 
 import './report.css';
 
@@ -46,13 +47,14 @@ function Report() {
                 <span className='span-result'>Resultados:</span>
                 <span className='result-value'>{numberOfResults(payments)}</span>
               </div>
-              <div className='total-box'>
+              <div className='total-box total-box-value'>
                 <span className='span-result'>Total à receber:</span>
                 <span className='result-value'>R$ {totalValue(payments)}</span>
               </div>
             </div>
             <div>
               <TableReport />
+              <TableReportMobile />
             </div>
           </div>
         )
