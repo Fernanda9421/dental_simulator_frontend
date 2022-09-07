@@ -4,6 +4,7 @@ import { requestData } from '../../services/requests';
 import ButtonAppointment from '../ButtonAppointment/ButtonAppointment';
 import Loading from '../Loading/Loading';
 import TableAppointment from '../TableAppointment/TableAppointment';
+import TableAppointmentMobile from '../Mobile/TableAppointmentMobile/TableAppointmentMobile';
 
 function Appointment() {
   const { setAppointments } = useContext(DentalSimulatorContext);
@@ -38,6 +39,7 @@ function Appointment() {
             </div>
             <div>
               <TableAppointment />
+              <TableAppointmentMobile />
             </div>
           </div>
         )

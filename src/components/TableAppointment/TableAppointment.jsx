@@ -17,14 +17,16 @@ function TableAppointment() {
           </tr>
         </thead>
         <tbody>
-          {appointments.map(({ id, attendanceDate, treatments, clients }) => (
-            <tr key={id}>
-              <td>{clients.fullName}</td>
-              <td>{convertDate(attendanceDate)}</td>
-              <td>{treatments.name}</td>
-              <td>R$ {treatments.totalPrice}</td>
-            </tr>
-          ))}
+          {
+            appointments.map(({ id, attendanceDate, treatments, clients }) => (
+              <tr key={id}>
+                <td>{clients.fullName}</td>
+                <td>{convertDate(attendanceDate)}</td>
+                <td>{treatments.name}</td>
+                <td>R$ {treatments.totalPrice}</td>
+              </tr>
+            ))
+          }
         </tbody>
       </table>
     </div>

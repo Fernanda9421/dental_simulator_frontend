@@ -6,7 +6,7 @@ import Loading from '../Loading/Loading';
 import { numberOfResults, totalValue } from '../../utils/utils';
 import { requestData } from '../../services/requests';
 import DentalSimulatorContext from '../../context/DentalSimulatorContext';
-import TableReportMobile from '../TableReport/TableReportMobile';
+import TableReportMobile from '../Mobile/TableReportMobile/TableReportMobile';
 
 import './report.css';
 
