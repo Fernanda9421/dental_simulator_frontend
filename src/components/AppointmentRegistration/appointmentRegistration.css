@@ -54,7 +54,8 @@ label {
 
 .button-register {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  align-items: center;
   margin-top: 13%;
 }
 
@@ -75,6 +76,11 @@ button:disabled {
   width: 50%;
 }
 
+.span-error {
+  color: red;
+  margin-top: 6%;
+}
+
 @media screen and (max-width: 630px) {
   .form-container {
     max-width: 80%;
@@ -88,7 +94,8 @@ button:disabled {
     flex-direction: column;
   }
 
-  label {
+  label,
+  .span-error {
     font-size: 80%;
   }
 

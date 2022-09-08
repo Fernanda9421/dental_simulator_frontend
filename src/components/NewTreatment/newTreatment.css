@@ -1,0 +1,22 @@
+legend {
+  color: #267160;
+  margin: 2% auto;
+}
+
+.new-treatment-container {
+  border: 0.2px solid hsl(0, 0%, 80%);
+  border-radius: 6px;
+  padding: 5%;
+}
+
+@media screen and (max-width: 630px) {
+  legend {
+    font-size: 80%;
+  }
+}
+
+@media screen and (min-width: 631px) and (max-width: 1050px) {
+  legend {
+    font-size: 90%;
+  }
+}
