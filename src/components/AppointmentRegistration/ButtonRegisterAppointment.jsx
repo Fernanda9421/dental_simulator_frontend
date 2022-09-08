@@ -6,31 +6,68 @@ import { requestPost } from '../../services/requests';
 import { numberOfInstallments } from '../../utils/utils';
 
 function ButtonRegisterAppointment() {
-  const { newAppointment, setNewAppointment, buttonEnableForRegisterNewAppointment } = useContext(DentalSimulatorContext);
+  const {
+    newAppointment,
+    setNewAppointment,
+    buttonEnableForRegisterNewAppointment,
+    newTreatment,
+    setNewTreatment,
+    error,
+    setError,
+  } = useContext(DentalSimulatorContext);
+
   const navigate = useNavigate();
 
   const navigateToHome = () => navigate('/');
 
+  const clearInputs = () => {
+    setNewAppointment({
+      attendanceDate: new Date(),
+      clientName: '',
+      treatment: '',
+      installments: 1,
+      dueDate: new Date(),
+    });
+
+    setNewTreatment({
+      name: '',
+      totalPrice: 0
+    });
+  }
+
   const createAppointment = async () => {
     try {
       const { attendanceDate, clientName, treatment, dueDate, installments } = newAppointment;
+      const { name, totalPrice } = newTreatment;
       const installmentsArray = numberOfInstallments(installments);
       const endpoint = '/appointment';
 
-      await requestPost(endpoint, {
-        attendanceDate, clientName, treatment, dueDate, installments: installmentsArray,
-      });
+      if (name.length !== 0 && totalPrice !== 0) {
+        const endpointNewTreatment = '/treatment/register';
 
-      navigateToHome();
-      setNewAppointment({
-        attendanceDate: new Date(),
-        clientName: '',
-        treatment: '',
-        installments: 1,
-        dueDate: new Date(),
-      });
+        await requestPost(endpointNewTreatment, {
+          name, totalPrice,
+        });
+
+        await requestPost(endpoint, {
+          attendanceDate, clientName, treatment: name, dueDate, installments: installmentsArray,
+        });
+
+        navigateToHome();
+        clearInputs();
+        setError('');
+      } else {
+        await requestPost(endpoint, {
+          attendanceDate, clientName, treatment, dueDate, installments: installmentsArray,
+        });
+  
+        navigateToHome();
+        clearInputs();
+        setError('');
+      }
     } catch (error) {
-      console.log(error);
+      setError(error.response.data.message);
+      clearInputs();
     }
   };
 
@@ -44,6 +81,9 @@ function ButtonRegisterAppointment() {
       >
         Cadastrar
       </button>
+      <span className='span-error'>
+        { error }
+      </span>
     </div>
   );
 }
