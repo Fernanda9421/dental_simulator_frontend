@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import Select from 'react-select';
 import DentalSimulatorContext from '../../context/DentalSimulatorContext';
 import { requestData } from '../../services/requests';
+import NewTreatment from '../NewTreatment/NewTreatment';
 
 function Treatment() {
   const {
@@ -25,12 +26,21 @@ function Treatment() {
   }, [setTreatments]);
 
   const options = () => {
-    const newTreatments = [];
+    const newTreatments = [{ value: 'Outro', label: 'Outro' }];
 
     treatments.map(({ name }) => (
-      newTreatments.push({ value: name, label: name })
+      newTreatments.unshift({ value: name, label: name })
     ));
+
     return newTreatments;
+  }
+
+  const registerNewTreatment = () => {
+    if (newAppointment.treatment === 'Outro') {
+      return (
+        <NewTreatment />
+      )
+    }
   }
 
   return (
@@ -43,6 +53,7 @@ function Treatment() {
           setNewAppointment({ ...newAppointment, treatment: value })
         )}
       />
+      { registerNewTreatment() }
     </div>
   );
 }
