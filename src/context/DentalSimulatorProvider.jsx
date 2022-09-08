@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { isValidName, isValidTreatment } from '../utils/inputValidations';
+import { isValidName, isValidTreatment, isValidTotalPrice } from '../utils/inputValidations';
 import DentalSimulatorContext from './DentalSimulatorContext';
 
 function DentalSimulatorProvider({ children }) {
@@ -15,14 +15,31 @@ function DentalSimulatorProvider({ children }) {
     dueDate: new Date(),
   });
   const [treatments, setTreatments] = useState([]);
+  const [newTreatment, setNewTreatment] = useState({
+    name: '',
+    totalPrice: 0,
+  });
   const [installments, setInstallments] = useState(
     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
   );
+  const [error, setError] = useState('');
 
   const buttonEnableForRegisterNewAppointment = () => {
     const { clientName, treatment } = newAppointment;
+    const { name, totalPrice } = newTreatment;
 
-    return isValidName(clientName) && isValidTreatment(treatment);
+    const isValidClient = isValidName(clientName);
+    const isValidTreatmentName = isValidTreatment(treatment);
+    const isValidNewTreatment = isValidTreatment(name);
+    const isValidPrice = isValidTotalPrice(totalPrice);
+
+    if (treatment === 'Outro') {
+      return (
+        isValidClient && isValidTreatmentName && isValidNewTreatment && isValidPrice
+      );
+    }
+    
+    return isValidClient && isValidTreatmentName;
   };
 
   const context = {
@@ -38,9 +55,13 @@ function DentalSimulatorProvider({ children }) {
     setNewAppointment,
     treatments,
     setTreatments,
+    newTreatment,
+    setNewTreatment,
     installments,
     setInstallments,
     buttonEnableForRegisterNewAppointment,
+    error,
+    setError,
   };
 
   return (
