@@ -59,7 +59,11 @@ label {
 }
 
 button:disabled {
-  background-color: #0D241F;
+  background-color: rgb(229, 229, 229);
+  color: rgb(229, 229, 229);
+  background-image: url('../../assets/not-allowed.png');
+  background-position: center;
+  background-repeat: no-repeat;
   cursor: not-allowed;
 }
 
