@@ -3,3 +3,4 @@ const TEN = 10;
 
 export const isValidName = (name) => name.length > TEN;
 export const isValidTreatment = (treatment) => treatment.length !== ZERO;
+export const isValidTotalPrice = (totalPrice) => totalPrice !== ZERO;
