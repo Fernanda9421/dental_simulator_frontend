@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { isValidName, isValidTreatment, isValidTotalPrice } from '../utils/inputValidations';
+import { isValidName, isValidTotalPrice } from '../utils/inputValidations';
 import DentalSimulatorContext from './DentalSimulatorContext';
 
 function DentalSimulatorProvider({ children }) {
@@ -28,10 +28,10 @@ function DentalSimulatorProvider({ children }) {
     const { clientName, treatment } = newAppointment;
     const { name, totalPrice } = newTreatment;
 
-    const isValidClient = isValidName(clientName);
-    const isValidTreatmentName = isValidTreatment(treatment);
-    const isValidNewTreatment = isValidTreatment(name);
-    const isValidPrice = isValidTotalPrice(totalPrice);
+    const isValidClient = isValidName(clientName, 10);
+    const isValidTreatmentName = isValidName(treatment, 3);
+    const isValidNewTreatment = isValidName(name, 3);
+    const isValidPrice = isValidTotalPrice(totalPrice, 0);
 
     if (treatment === 'Outro') {
       return (
