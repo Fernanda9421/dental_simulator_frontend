@@ -1,6 +1,7 @@
-const ZERO = 0;
-const TEN = 10;
+export const isValidName = (name, min) => (
+  name.length >= min && typeof name === 'string'
+);
 
-export const isValidName = (name) => name.length > TEN;
-export const isValidTreatment = (treatment) => treatment.length !== ZERO;
-export const isValidTotalPrice = (totalPrice) => totalPrice !== ZERO;
+export const isValidTotalPrice = (totalPrice, min) => (
+  totalPrice > min
+);
