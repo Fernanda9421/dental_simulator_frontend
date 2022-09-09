@@ -7,7 +7,9 @@ function AttendanceDate() {
 
   return (
     <div className='input-container div-date'>
-      <label>Data do atendimento</label>
+      <label>
+        Data do atendimento<abbr className='required' title='field required'>*</abbr>
+      </label>
       <DatePicker
         dateFormat='dd/MM/yyyy'
         className='input-date'

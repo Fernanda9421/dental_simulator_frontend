@@ -8,7 +8,9 @@ function DueDate() {
 
   return (
     <div className='input-container div-date'>
-      <label>Data de vencimento</label>
+      <label>
+        Data de vencimento<abbr className='required' title='field required'>*</abbr>
+      </label>
       <DatePicker
         className='input-date'
         dateFormat='dd/MM/yyyy'
