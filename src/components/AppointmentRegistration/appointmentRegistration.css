@@ -81,6 +81,18 @@ button:disabled {
   margin-top: 6%;
 }
 
+.required {
+  color: red;
+  font-weight: 500;
+  margin-left: 1%;
+}
+
+.error-message {
+  font-size: 60%;
+  color: red;
+  margin-top: 1%;
+}
+
 @media screen and (max-width: 630px) {
   .form-container {
     max-width: 80%;
@@ -95,7 +107,8 @@ button:disabled {
   }
 
   label,
-  .span-error {
+  .span-error,
+  .required-fields {
     font-size: 80%;
   }
 
