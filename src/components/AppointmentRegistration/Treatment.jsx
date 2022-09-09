@@ -45,7 +45,9 @@ function Treatment() {
 
   return (
     <div  className='input-container'>
-      <label>Tratamento</label>
+      <label>
+        Tratamento<abbr className='required' title='field required'>*</abbr>
+      </label>
       <Select
         options={ options() }
         className='select-treatment input-appointments'

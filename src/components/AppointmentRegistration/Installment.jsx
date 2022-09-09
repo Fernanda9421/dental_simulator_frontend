@@ -17,7 +17,9 @@ function Installment() {
 
   return (
     <div  className='input-container'>
-      <label>Número de parcelas</label>
+      <label>
+        Número de parcelas<abbr className='required' title='field required'>*</abbr>
+      </label>
       <Select
         options={ options() }
         defaultValue={{ value: 1, label: 1 }}
