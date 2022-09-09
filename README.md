@@ -146,6 +146,7 @@ Nesse projeto, tive a oportunidade de praticar as seguintes habilidades:
 - Utilizar os ciclos de vida de um componente React;
 - Hooks - poder utilizar componentes funcionais para guardar estado e gerenciar o ciclo de vida do componente;
 - Criar rotas para navegar entre as páginas da aplicação.
+- Estilizar a página com CSS, e deixá-la responsiva.
 
 # Autor:
 - [Linkedin](https://www.linkedin.com/in/fernandaacarvalho/)
