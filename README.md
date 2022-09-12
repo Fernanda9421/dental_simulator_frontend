@@ -46,7 +46,7 @@
     - Visualizar todas as consultas cadastradas, com o nome do cliente, a data de atendimento, o tratamento realizado e seu valor total;
     - Cadastrar uma nova consulta, informando o nome do cliente, o tratamento realizado, o número de parcelas, a data de atendimento e a data de vencimento da primeira parcela;
     - Visualizar as parcelas referente à cada cliente, com o nome, o valor da parcela e a data de vencimento de cada uma delas;
-    - Cadastrar um novo atendimento, informando o nome do tratamento e seu valor total;
+    - Cadastrar um novo tratamento, informando o nome do tratamento e seu valor total;
     - Gerar um relatório de quanto vai receber em um determinado período de tempo, informando a data inicial e a data final.
 
 ## Pré-requisitos:
@@ -117,10 +117,10 @@ O *deploy* da aplicação foi feito utilizando a plataforma **Heroku**.
 ### Relatórios:
 - Tabela contendo todas as pessoas cadastradas, e suas respectivas faturas do tratamento realizado.
 É possível visualizar o número de faturas cadastradas, e o valor à receber com a soma de todas elas.
-- Campos de `Data inicial` e `Data final`, onde a pessoa usuária seleciona um período de tempo, e ao gerar o relatório, apenas as faturas com vencimento entre as data escolhidas são retornadas, juntamente com o número de faturas e valor total à receber atualizados.
+- Campos de `Data inicial` e `Data final`, onde a pessoa usuária seleciona um período de tempo, e ao gerar o relatório, apenas as faturas com vencimento entre as datas escolhidas são retornadas, juntamente com o número de faturas e valor total à receber atualizados.
 
 ### Consultas:
-- Tabela contendo todas as consultas realizadas até o momento, contendo o nome, a data do atendimento, o tratamento realizado e o valor total do tratamento de cada cliente.
+- Tabela contendo todas as consultas realizadas até o momento, com o nome, a data do atendimento, o tratamento realizado e o valor total do tratamento de cada cliente.
 - Botão para cadastrar uma nova consulta.
 
 ### Cadastrar nova consulta:
@@ -130,7 +130,7 @@ O *deploy* da aplicação foi feito utilizando a plataforma **Heroku**.
 - Caso o valor escolhido para o campo **Tratamento** seja `Outro`, uma extensão do formulário se abre, para a pessoa usuária seja capaz de cadastrar um novo tratamento no banco de dados, com seu respectivo valor. Se o tratamento já estiver cadastrado, uma mensagem de erro é gerada.
 - Caso o cliente ainda não esteja cadastrado no banco de dados, ao preencher todos as informções corretamente, o mesmo é cadastrado.
 - O valor total do tratamento pode ser dividido em até 10 parcelas, e cada parcela será cadastrada com seu respectivo valor e exibida na tela de `Relatórios`.
-- A pessoa usuária seleciona a data de vencimento da primeira parcela, e caso o tratamento seja parcelado, a data de vencimentos das outras parcelas são geradas automaticamente, sempre acrescida de um mês.
+- A pessoa usuária seleciona a data de vencimento da primeira parcela, e caso o tratamento seja parcelado, a data de vencimento das outras parcelas são geradas automaticamente, sempre acrescida de um mês.
 - O botão de cadastro só é habilitado quando todos os campos são preenchidos corretamente.
 
 ---
