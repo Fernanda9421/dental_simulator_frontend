@@ -18,8 +18,8 @@
 - Projeto
   - [Sobre](#sobre)
   - [Pré-requisitos](#pré-requisitos)
-  - [Variáveis de Ambiente e comunicação com a API](#variáveis-de-ambiente-e-comunicação-com-a-api)
   - [Instalação](#instalação)
+  - [Variáveis de Ambiente e comunicação com a API](#variáveis-de-ambiente-e-comunicação-com-a-api)
   - [Inicialize a Aplicação](#inicialize-a-aplicação)
   - [Deploy da Aplicação](#deploy-da-aplicação)
   - [Funcionalidades](#funcionalidades)
@@ -54,38 +54,6 @@ Antes de começar, você vai precisar ter instalado em sua máquina as seguintes
 - [Git](https://git-scm.com)
 - [VSCode](https://code.visualstudio.com/)
 
-## Variáveis de Ambiente e comunicação com a API
-Essa aplicação consome e envia dados para uma API. Portanto, para rodar a aplicação localmente, você precisará escolher entre dois caminhos:
-
-<details>
-  <summary><strong>Clonar o repositório Dental Simulator API</strong></summary><br />
-
-  - Acesse [esse repositório](https://github.com/Fernanda9421/dental_simulator_backend) e siga o passo a passo descrito no README;
-  - Configure as variáveis de ambiente:
-    - Na raiz do projeto, crie uma arquivo nomeado como `.env`
-    - Dentro dele, insira as seguintes informações:
-    ```
-    REACT_APP_BACKEND_BASE_URL=http://localhost
-    REACT_APP_BACKEND_PORT=3001
-    ```
-  - Siga para a seção [Instalação](#instalação)
-
-  **Observação: as duas aplicações devem estar rodando para que tudo funcione corretamente.**
-</details>
-
-<details>
-  <summary><strong>Consumir a API hospedada na nuvem</strong></summary><br />
-
-  - Configure as variáveis de ambiente:
-    - Na raiz do projeto, crie uma arquivo nomeado como `.env`
-    - Dentro dele, insira as seguintes informações:
-    ```
-    REACT_APP_BACKEND_BASE_URL=https://dental-simulator-backend.herokuapp.com
-    REACT_APP_BACKEND_PORT=443
-    ```
-  - Siga para a seção [Instalação](#instalação)
-</details>
-
 ## Instalação
 - Clone o repositório:
   ```bash
@@ -99,6 +67,38 @@ Essa aplicação consome e envia dados para uma API. Portanto, para rodar a apli
   ```bash
   npm install
   ```
+
+## Variáveis de ambiente e comunicação com a API
+Essa aplicação consome e envia dados para uma API. Portanto, para rodar a aplicação localmente, você precisará escolher entre dois caminhos:
+
+<details>
+  <summary><strong>Clonar o repositório Dental Simulator API</strong></summary><br />
+
+  - Acesse [esse repositório](https://github.com/Fernanda9421/dental_simulator_backend) e siga o passo a passo descrito no README;
+  - Configure as variáveis de ambiente nesse repositório:
+    - Na raiz do projeto, renomeie o arquivo `.env.example` para `.env`
+    - Dentro dele, insira as seguintes informações:
+    ```
+    REACT_APP_BACKEND_BASE_URL=http://localhost
+    REACT_APP_BACKEND_PORT=3001
+    ```
+  - Siga para a seção [Inicialize a Aplicação](#inicialize-a-aplicação)
+
+  **Observação: as duas aplicações devem estar rodando para que tudo funcione corretamente.**
+</details>
+
+<details>
+  <summary><strong>Consumir a API hospedada na nuvem</strong></summary><br />
+
+  - Configure as variáveis de ambiente nesse ambiente:
+    - Na raiz do projeto, renomeie o arquivo `.env.example` para `.env`
+    - Dentro dele, insira as seguintes informações:
+    ```
+    REACT_APP_BACKEND_BASE_URL=https://dental-simulator-backend.herokuapp.com
+    REACT_APP_BACKEND_PORT=443
+    ```
+  - Siga para a seção [Inicialize a Aplicação](#inicialize-a-aplicação)
+</details>
 
 ## Inicialize a Aplicação
   Para rodar a aplicação, digite o comando no terminal:
